@@ -39,35 +39,35 @@ export function HeroVideo() {
         }}
       />
       <div
-        className="relative z-10 flex h-full flex-col items-center justify-center gap-1 px-6 py-24 text-center"
+        className="relative z-10 flex h-full flex-col items-center justify-center gap-1 px-6 py-16 text-center"
         style={{
           transform: `translateY(${offset * 0.22}px)`,
           opacity: Math.max(0, 1 - offset / 620),
         }}
       >
         <span className="text-lg text-ivory/90">&#10084;</span>
-        <p className="font-script mt-2 max-w-xs text-xl leading-relaxed text-ivory/95 drop-shadow-lg sm:max-w-sm sm:text-2xl">
+        <p className="font-script mt-1 max-w-xs text-lg leading-relaxed text-ivory/95 drop-shadow-lg sm:max-w-sm sm:text-2xl">
           We are honored to welcome you to the Wedding ceremony of...
         </p>
 
-        <div className="mt-6">
-          <h1 className="font-script gold-text text-6xl leading-[1.3] py-2 drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
+        <div className="mt-4">
+          <h1 className="font-script gold-text text-5xl leading-[1.3] py-2 drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
             {invite.groom.name}
           </h1>
-          <div className="font-display mt-3 space-y-0.5 text-sm text-ivory/90">
+          <div className="font-display mt-2 space-y-0.5 text-xs text-ivory/90 sm:text-sm">
             <p>{invite.groom.parents}</p>
             <p>{invite.groom.education}</p>
             <p>{invite.groom.title}</p>
           </div>
         </div>
 
-        <p className="font-script my-3 text-3xl text-ivory/85">&amp;</p>
+        <p className="font-script my-2 text-2xl text-ivory/85 sm:text-3xl">&amp;</p>
 
-        <div className="mb-6">
-          <h2 className="font-script gold-text text-6xl leading-[1.3] py-2 drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
+        <div className="mb-2">
+          <h2 className="font-script gold-text text-5xl leading-[1.3] py-2 drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
             {invite.bride.name}
           </h2>
-          <div className="font-display mt-3 space-y-0.5 text-sm text-ivory/90">
+          <div className="font-display mt-2 space-y-0.5 text-xs text-ivory/90 sm:text-sm">
             <p>{invite.bride.parents}</p>
             <p>{invite.bride.education}</p>
             <p>{invite.bride.title}</p>
