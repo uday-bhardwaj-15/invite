@@ -38,9 +38,8 @@ export function HeroVideo() {
             "linear-gradient(180deg, oklch(0.3 0.05 300 / 0.35) 0%, transparent 35%, oklch(0.3 0.05 300 / 0.25) 70%, var(--background) 100%)",
         }}
       />
-
       <div
-        className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center"
+        className="relative z-10 flex h-full flex-col items-center justify-center gap-1 px-6 py-24 text-center"
         style={{
           transform: `translateY(${offset * 0.22}px)`,
           opacity: Math.max(0, 1 - offset / 620),
@@ -51,24 +50,24 @@ export function HeroVideo() {
           We are honored to welcome you to the Wedding ceremony of...
         </p>
 
-        <div className="mt-8">
-          <h1 className="font-script gold-text text-6xl leading-none drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
+        <div className="mt-6">
+          <h1 className="font-script gold-text text-6xl leading-[1.3] py-2 drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
             {invite.groom.name}
           </h1>
-          <div className="font-display mt-4 space-y-0.5 text-sm text-ivory/90">
+          <div className="font-display mt-3 space-y-0.5 text-sm text-ivory/90">
             <p>{invite.groom.parents}</p>
             <p>{invite.groom.education}</p>
             <p>{invite.groom.title}</p>
           </div>
         </div>
 
-        <p className="font-script my-4 text-3xl text-ivory/85">&amp;</p>
+        <p className="font-script my-3 text-3xl text-ivory/85">&amp;</p>
 
-        <div>
-          <h2 className="font-script gold-text text-6xl leading-none drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
+        <div className="mb-6">
+          <h2 className="font-script gold-text text-6xl leading-[1.3] py-2 drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)] sm:text-8xl">
             {invite.bride.name}
           </h2>
-          <div className="font-display mt-4 space-y-0.5 text-sm text-ivory/90">
+          <div className="font-display mt-3 space-y-0.5 text-sm text-ivory/90">
             <p>{invite.bride.parents}</p>
             <p>{invite.bride.education}</p>
             <p>{invite.bride.title}</p>
@@ -76,7 +75,7 @@ export function HeroVideo() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-0 right-0 z-10 flex flex-col items-center text-ivory/85">
+      <div className="absolute bottom-4 left-0 right-0 z-10 flex flex-col items-center text-ivory/85">
         <span className="font-display text-[0.65rem] uppercase tracking-[0.5em]">Scroll</span>
         <ChevronDown
           className="mt-1 h-5 w-5"
